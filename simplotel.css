@@ -1,0 +1,511 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: "Roboto";
+}
+
+/* for mobiles */
+@media (min-width:576px) and (max-width:768px) {
+    .Hotel-menu-bar {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+
+    }
+
+    .list-options {
+        list-style-type: none;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .circle-phone-icon {
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 4px;
+    }
+
+    .top-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        position: relative;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+
+    .top-section-container img {
+        width: 100%;
+
+    }
+
+    .top-inside-card {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        right: 20%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 100, 100, 0.6);
+        padding: 20px;
+        color: white;
+        text-align: center;
+    }
+
+    .bottom-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bottom-section-container h1 {
+        color: #ffffff;
+        margin: 5px;
+        margin-bottom: 15px;
+    }
+
+    .bottom-section-card {
+        background: white;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 300px;
+        margin: 20px;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+
+    .bottom-section-card img {
+        width: 100%;
+        height: 220px;
+        border-top-right-radius: 60px;
+    }
+
+    .bottom-card-content {
+        padding: 20px;
+    }
+
+    .bottom-card-content h2 {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    .bottom-card-content p {
+        margin: 0;
+        color: #666666;
+    }
+
+    .bottom-section-container button {
+        width: 100px;
+        margin: 15px;
+        height: 30px;
+        border-width: 0;
+        border-radius: 25px;
+        background-color: #FEF6F6;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .bottom-section-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+/* for tablets */
+@media (min-width:768px) {
+    .Hotel-menu-bar {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+
+    }
+
+    .list-options {
+        list-style-type: none;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .circle-phone-icon {
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 4px;
+    }
+
+    .top-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        position: relative;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+
+    .top-section-container img {
+        width: 100%;
+
+    }
+
+    .top-inside-card {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        right: 20%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 100, 100, 0.6);
+        padding: 20px;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .top-inside-card h1 {
+        font-size: 40px;
+    }
+
+    .top-inside-card p {
+        font-size: 20px;
+    }
+
+    .bottom-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .item-cards-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-section-container h1 {
+        color: #ffffff;
+        margin: 5px;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .bottom-section-card {
+        background: white;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 300px;
+        margin: 12px;
+        justify-content: space-around;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+
+    .bottom-section-card img {
+        width: 100%;
+        height: 220px;
+        border-top-right-radius: 60px;
+    }
+
+    .bottom-card-content {
+        padding: 20px;
+    }
+
+    .bottom-card-content h2 {
+        margin: 10px 0;
+        font-size: 24px;
+    }
+
+    .bottom-card-content p {
+        margin: 0;
+        color: #666666;
+    }
+
+    .bottom-section-container button {
+        width: 100px;
+        margin: 15px;
+        height: 30px;
+        border-width: 0;
+        border-radius: 25px;
+        background-color: #FEF6F6;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .bottom-section-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+/* for laptop */
+@media (min-width:1200px) {
+    .Hotel-menu-bar {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        margin: 10px;
+
+    }
+
+    .list-options {
+        list-style-type: none;
+        font-size: 18px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+        font-size: 22px;
+    }
+
+    .circle-phone-icon {
+        border: 2px solid black;
+        border-radius: 30px;
+        padding: 4px;
+    }
+
+    .top-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        position: relative;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+
+    .top-section-container img {
+        width: 100%;
+    }
+
+    .top-inside-card {
+        position: absolute;
+        top: 50%;
+        left: 30%;
+        right: 20%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 100, 100, 0.6);
+        padding: 20px;
+        color: white;
+        text-align: center;
+        border-radius: 8px;
+    }
+
+    .top-inside-card h1 {
+        font-size: 40px;
+    }
+
+    .top-inside-card p {
+        font-size: 20px;
+    }
+
+    .bottom-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .item-cards-section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .bottom-section-container h1 {
+        color: #ffffff;
+        margin: 5px;
+        margin-bottom: 15px;
+        font-size: 40px;
+    }
+
+    .bottom-section-card {
+        background: white;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 300px;
+        margin: 47px;
+        justify-content: space-around;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+
+    .bottom-section-card img {
+        width: 100%;
+        height: 220px;
+        border-top-right-radius: 60px;
+    }
+
+    .bottom-card-content {
+        padding: 20px;
+    }
+
+    .bottom-card-content h2 {
+        margin: 10px 0;
+        font-size: 30px;
+    }
+
+    .bottom-card-content p {
+        margin: 0;
+        color: #666666;
+        font-size: 20px;
+    }
+
+    .bottom-section-container button {
+        width: 160px;
+        margin: 15px;
+        height: 50px;
+        border-width: 0;
+        border-radius: 25px;
+        background-color: #FEF6F6;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 20px;
+    }
+
+    .bottom-section-card:hover {
+        transform: scale(1.05);
+    }
+}
+
+
+@media (max-width:575px) {
+    .Hotel-menu-bar {
+        background-color: #ffffff;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+
+    }
+
+    .list-options {
+        list-style-type: none;
+        font-size: 9px;
+    }
+
+    a {
+        text-decoration: none;
+        cursor: pointer;
+        color: #000000;
+    }
+
+    .circle-phone-icon {
+        border: 2px solid black;
+        border-radius: 12px;
+        padding: 3px;
+    }
+
+    .top-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        position: relative;
+        width: 100%;
+        padding-bottom: 30px;
+        margin-bottom: 10px;
+    }
+
+    .top-section-container img {
+        width: 100%;
+
+    }
+
+    .top-inside-card {
+        position: absolute;
+        top: 40%;
+        left: 30%;
+        right: 10%;
+        transform: translate(-50%, -50%);
+        background: rgba(255, 100, 100, 0.6);
+        color: white;
+        text-align: center;
+    }
+
+    .top-inside-card h1 {
+        font-size: 15px;
+    }
+
+    .top-inside-card p {
+        font-size: 8px;
+    }
+
+    .bottom-section-container {
+        background-image: linear-gradient(to left, #FBE16C, #F696EE);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        width: 100%;
+    }
+
+    .bottom-section-container h1 {
+        color: #ffffff;
+        margin: 5px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .bottom-section-card {
+        background: white;
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        text-align: center;
+        width: 80%;
+        margin: 20px;
+        padding: 20px;
+        transition: transform 0.2s;
+    }
+
+    .bottom-section-card img {
+        width: 100%;
+        height: 220px;
+        border-top-right-radius: 60px;
+    }
+
+    .bottom-card-content {
+        padding: 20px;
+    }
+
+    .bottom-card-content h2 {
+        margin: 10px 0;
+        font-size: 15px;
+    }
+
+    .bottom-card-content p {
+        margin: 0;
+        color: #666666;
+        font-size: 10px;
+    }
+
+    .bottom-section-container button {
+        width: 80px;
+        margin: 15px;
+        height: 30px;
+        border-width: 0;
+        border-radius: 25px;
+        background-color: #FEF6F6;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 11px;
+    }
+
+    .bottom-section-card:hover {
+        transform: scale(1.05);
+    }
+}
